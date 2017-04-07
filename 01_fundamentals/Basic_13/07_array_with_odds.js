@@ -2,6 +2,7 @@
 
 var array = [];
 
-for (var i = 0; i < 27; i++) {
-  
+for (var i = 1; i < 27; i +=2) {
+  array.push(i)
 }
+console.log(array);
