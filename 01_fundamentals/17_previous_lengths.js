@@ -12,7 +12,7 @@ var array = ['string', 'ball', 'bat', 'small', 'red', 'baseball']
 
 function replaceString(array) {
   // array[0] = 0
-  for (var i = 1; i < array.length; i++) {
+  for (var i = 1; i < array.length-1; i++) {
     var str = array[i-1];
     console.log('This is the value of str: ',str);
     var size = str.length;
