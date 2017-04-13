@@ -1,11 +1,19 @@
-function insertAtIndex(num, y){
-  var array = [1,2,3,4];
-  array.push(0)
-  for (var i = array.length-1; i>y; i--) {
-    array[i] = array[i-1]
+// Insert value into a given location into a given array.
+
+// take in array, num, pos
+// open up space for new item at the end of the array
+// shift all values to the right of target position
+// insert new value in target position
+
+var arr = [1,2,3,4];
+
+function insertAtIndex(arr, num, pos){
+  arr[arr.length] = null
+  for (var i = arr.length-1; i>pos; i--) {
+    arr[i] = arr[i-1]
   }
-  array[y] = num
-  console.log(array);
+  arr[pos] = num
+  console.log(arr);
 }
 
-insertAtIndex(100,2)
+insertAtIndex(arr,100,2)
