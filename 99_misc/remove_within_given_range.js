@@ -17,10 +17,10 @@ function removeWithinRange(arr,min,max) {
   }
   for (var j = 0; j < array.length-1; j++) {
     console.log('Array within J loop BEFORE: ',array);
+    if(array[j] === null){nullCount++}
     if(array[j] === null){
       array[j] = array[j+1]       // results in [1,2,5,6,null,null]
       array[j+1] = null
-      nullCount++
       console.log('Array within J loop AFTER: ',array);
       console.log('This is value of nullCount: ',nullCount);
     }
@@ -31,9 +31,3 @@ function removeWithinRange(arr,min,max) {
 }
 
 removeWithinRange(array, min, max)
-
-
-function multiply(a, b){
- var result =  a * b
- Return result
-}
