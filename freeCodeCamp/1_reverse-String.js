@@ -4,8 +4,8 @@
 // return string
 
 
-
-function reverseString(str) {
+// building and testing
+function reverseString_long(str) {
   // var arr = []
   // arr.push(str.split(''))
   var splitstring = str.split('')
@@ -19,11 +19,15 @@ function reverseString(str) {
   return x;
 }
 
+// refactored
 function reverseString(str) {
   var splitstring = str.split('')
   var arr = splitstring.reverse()
   var x = arr.join('')
   return x;
 }
+
+
+// best practice
 
 reverseString("hello");
