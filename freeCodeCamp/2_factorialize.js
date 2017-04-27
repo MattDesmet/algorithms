@@ -20,3 +20,13 @@ function factorialWithArray(num){
 }
 
 result = factorialWithArray(5)
+
+function factorial_recursive(n) {
+  if (n == 0)
+    return 1;
+  else
+    return factorial_recursive(n-1) * n;
+  }
+
+var recursiveResult = factorial_recursive(5)
+console.log(recursiveResult);
