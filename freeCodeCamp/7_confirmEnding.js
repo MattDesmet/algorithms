@@ -38,6 +38,8 @@ function confirmRecursively(str, target) {
   var count = target.length;
   var str_walker = str.length-1;
   var target_walker = target.length-1;
+  console.log(str.charAt(str_walker));
+  console.log(target.charAt(target_walker));
   if (str.charAt(str_walker) !== target.charAt(target_walker) )
   console.log('no match');
   else if (str.charAt(str_walker) !== target.charAt(target_walker)) {
