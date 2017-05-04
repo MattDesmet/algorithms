@@ -42,7 +42,7 @@ function confirmRecursively(str, target) {
   console.log(target.charAt(target_walker));
   if (str.charAt(str_walker) !== target.charAt(target_walker) )
   console.log('no match');
-  else if (str.charAt(str_walker) !== target.charAt(target_walker)) {
+  else if (str.charAt(str_walker) === target.charAt(target_walker)) {
   console.log('its a match');
   }
 }

@@ -1,3 +1,8 @@
+// BENEFITS: easy insertion and removal of nodes in the sequence
+// DRAWBACKS: must traverse entire list.  No direct lookup ability. traverse forward only
+// uses more memory than arrays due to storage of the pointers as well.
+
+
 // sample code
 
 var list = {
