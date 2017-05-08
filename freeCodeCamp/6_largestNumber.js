@@ -11,22 +11,19 @@
 
 
 function largestOfFour(array) {
-  // var max = 0
-  resultsArray = []
+  var max = 0;
+  resultsArray = [];
   for (var i = 0; i < array.length; i++) {
-    console.log(array[i]);
     for(var j = 0; j < array[i].length; j++){
-      console.log(`This is inside the J loop  *** array[i] *** :${ array[i] }`);
-      var max = array[i][0]
-      console.log(`value of max  *** "max" *** :${ max }`);
-      if (array[j] > max) {
-        max = array[j];
-        resultsArray.push(max)
+      if (array[i][j] > max) {
+        max = array[i][j];
       }
     }
+    resultsArray.push(max);
+    max = 0;
   }
-  console.log(resultsArray);
   return resultsArray;
 }
 
 largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+largestOfFour([[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 857, 1]]) //should return [27,5,39,1001]
